@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boulder Green Commute Guide</title>
+  <style>
+    :root {
+      --green-600: #16a34a;
+      --green-500: #22c55e;
+      --green-100: #dcfce7;
+      --blue-600: #2563eb;
+      --blue-500: #3b82f6;
+      --gray-900: #111827;
+      --gray-700: #374151;
+      --gray-500: #6b7280;
+      --gray-100: #f3f4f6;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; color: var(--gray-900); }
+    header { background: linear-gradient(135deg, #16a34a, #22c55e); color: white; padding: 3rem 1rem; text-align: center; }
+    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    header p { font-size: 1.2rem; opacity: 0.9; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 2rem 1rem; }
+    .card { background: white; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); padding: 2rem; margin-bottom: 2rem; }
+    .card h2 { color: var(--green-600); margin-bottom: 1rem; }
+    h3 { color: var(--gray-700); margin: 1.5rem 0 0.5rem; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+    th, td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--gray-100); }
+    th { background: var(--green-100); color: var(--green-600); }
+    tr:hover { background: var(--gray-100); }
+    .badge { display: inline-block; padding: 0.25rem 0.75rem; border-radius: 999px; font-size: 0.875rem; font-weight: 600; }
+    .badge-walking { background: #dcfce7; color: #16a34a; }
+    .badge-biking { background: #dbeafe; color: #2563eb; }
+    .route-step { border-left: 3px solid var(--green-500); padding: 0.5rem 1rem; margin: 0.5rem 0; }
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1rem 0; }
+    .stat-box { background: var(--gray-100); padding: 1rem; border-radius: 8px; text-align: center; }
+    .stat-box .number { font-size: 1.8rem; font-weight: 700; color: var(--green-600); }
+    .stat-box .label { font-size: 0.875rem; color: var(--gray-500); }
+    footer { background: var(--gray-900); color: white; text-align: center; padding: 2rem 1rem; margin-top: 3rem; }
+    a { color: var(--blue-600); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    @media (max-width: 768px) {
+      header h1 { font-size: 1.8rem; }
+      table { font-size: 0.875rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌿 Boulder Green Commute Guide</h1>
+    <p>Sustainable travel options for Boulder residents</p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>🚶‍♂️➡️🚲 45 Oak Avenue to 1800 Broadway</h2>
+      <p>A quick downtown Boulder commute perfect for walking or biking!</p>
+
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="number">0.87 km</div>
+          <div class="label">Distance</div>
+        </div>
+        <div class="stat-box">
+          <div class="number">~2 min</div>
+          <div class="label">Walking Time</div>
+        </div>
+        <div class="stat-box">
+          <div class="number">~2 min</div>
+          <div class="label">Biking Time</div>
+        </div>
+        <div class="stat-box">
+          <div class="number">0.18 kg</div>
+          <div class="label">CO₂ Saved vs. Driving</div>
+        </div>
+      </div>
+
+      <h3>Both Modes Comparison</h3>
+      <table>
+        <tr><th>Mode</th><th>Distance</th><th>Duration</th><th>Pace</th><th>Calories</th></tr>
+        <tr>
+          <td><span class="badge badge-walking">🚶 Walking</span></td>
+          <td>0.87 km (0.54 mi)</td>
+          <td>2 minutes</td>
+          <td>~4 min/km</td>
+          <td>~42 kcal</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-biking">🚲 Biking</span></td>
+          <td>0.87 km (0.54 mi)</td>
+          <td>2 minutes</td>
+          <td>~2.5 min/km</td>
+          <td>~28 kcal</td>
+        </tr>
+      </table>
+
+      <h3>🗺️ Turn-by-Turn Directions</h3>
+      <ol>
+        <li class="route-step">Head south on <strong>Oak Avenue</strong> toward 19th Street (23 m)</li>
+        <li class="route-step">Turn right onto <strong>19th Street</strong> heading east (55.6 m)</li>
+        <li class="route-step">Turn left onto <strong>Arapahoe Avenue</strong> heading east (198 m)</li>
+        <li class="route-step">Continue east on <strong>17th Street</strong> (524 m)</li>
+        <li class="route-step">Turn right onto <strong>Pearl Street</strong> heading north (68.9 m)</li>
+        <li class="route-step">Arrive at <strong>1800 Broadway</strong></li>
+      </ol>
+
+      <h3>💡 Commute Tips</h3>
+      <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+        <li>Both walking and biking take only ~2 minutes — faster than finding parking!</li>
+        <li>Boulder's downtown core has excellent bike lanes and shared-use paths.</li>
+        <li>On nice days, biking with the breeze is a refreshing way to start your workday.</li>
+        <li>Walking in 2 minutes is so quick you might just as well walk every day for health benefits!</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>📊 Why Sustainable Commuting Matters</h2>
+      <table>
+        <tr><th>Benefit</th><th>Walking</th><th>Biking</th></tr>
+        <tr><td>CO₂ Emissions</td><td>Zero</td><td>Zero</td></tr>
+        <tr><td>Energy Consumption</td><td>Zero fossil fuel</td><td>Zero fossil fuel</td></tr>
+        <tr><td>Health Benefit</td><td>Cardio, mood boost</td><td>Cardio, leg strength</td></tr>
+        <tr><td>Cost</td><td>Free</td><td>Free (no gas/parking)</td></tr>
+        <tr><td>Parking</td><td>Not needed</td><td>Bike racks available</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>🔗 Boulder Resources</h2>
+      <ul style="margin-left: 1.5rem;">
+        <li><a href="https://bouldercolorado.gov">Boulder MUTCD - City traffic guidelines</a></li>
+        <li><a href="https://bouldercolorado.gov">City of Boulder - Transportation</a></li>
+        <li><a href="https://vlre.rs/15y0r">Boulder Valley Metro - Public Transit</a></li>
+      </ul>
+    </div>
+
+    <footer>
+      <p>🌿 Boulder Green Commute Guide — Making Boulder a greener place, one commute at a time.</p>
+      <p>Data sourced from OpenStreetMap. <a href="https://github.com/zhub9006/boulder-green-commute-v2">View on GitHub</a></p>
+    </footer>
+  </div>
+</body>
+</html>
